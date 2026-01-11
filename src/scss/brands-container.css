@@ -1,0 +1,228 @@
+:root {
+--link-color: #1b1c21;
+--title-font-color: #7E7E82;
+--white-color: #FFFFFF;
+--background-color: #F8F8F8;
+--border-title-color: #D9FFF5;
+--border-color: #EAEAEA;
+}
+
+
+
+.brands-container {
+  margin-top:20px;
+}
+
+.header-brands__title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size:16px;
+    color: var(--title-font-color);
+    margin-left:20px;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+.header-brands {
+    display:flex;
+    border-top: 1px solid var(--border-title-color);
+    background-image: linear-gradient(to right, var(--background-color), var(--white-color));
+}
+
+.read-more__button,
+.about__read-more-button {
+    display: flex; 
+	justify-content: center;
+	align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top:20px;
+    margin-left:15px;
+} 
+
+
+
+.card-container {
+    margin-top: 25px;
+}
+
+.card-container__card {
+    background-image: url("C:/Users/evgen/Desktop/block7/src/img/go.svg");
+    background-color: var(--white-color);
+    background-repeat:no-repeat;
+    background-position: 185px center;
+    border-radius:6px;
+    border: 1px solid var(--border-color);
+    position:relative;
+    width:240px;
+    height:72px;
+    margin:0;
+    padding:0;        
+}
+
+.card-container__img--position {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-15%, -50%);  
+}
+
+.swiper {
+    width:100%;
+    height:120px;
+    margin-top:16px;
+}
+
+.brands-swiper-wrapper {
+    padding-left:16px;
+    height:72px;
+    padding-bottom: 25px;
+}
+
+.brands-swiper-slide {
+    width:240px;
+    padding:0;
+    margin:0;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color:#DDDDDD;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #B5B6BC;
+}
+
+.swiper-container::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 81px;
+  left: 0;
+  top:0;
+  pointer-events: none;
+  background: linear-gradient(to right, rgba(248, 248, 248, 1), rgba(248, 248, 248, 0));
+  z-index: 2;
+}
+
+.swiper-container::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 81px;
+  right: 0;
+  top:0;
+  pointer-events: none;
+  background: linear-gradient(to left, rgba(248, 248, 248, 1), rgba(248, 248, 248, 0));
+  z-index: 2;
+}
+
+.swiper-container {
+    position: relative;
+}
+
+@media (min-width: 768px) {
+.swiper-container::before,
+.swiper-container::after {
+  display: none;
+}
+}
+
+/*Media directives*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+.header-brands {
+    width:auto;
+    height:80px;
+}
+.read-more__button {
+    display:none;
+}
+
+.card-container,
+.additional-card-container {
+    display:none;
+}
+.card-container__card {
+    width:240px;
+    height:72px;
+    display:inline-block;
+}
+
+.header-brands__title {
+    margin-left:16px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1365px) {
+.card-container__card {
+    width:224px;
+    height:72px;
+    background-position: 165px center;
+
+}
+.header-brands {
+    width:auto;
+    height:56px;
+}
+
+.card-container {
+    display:grid;
+    grid-template-columns: 224px 224px 224px;
+    justify-content: space-between;
+    row-gap:20px;
+    padding: 0 20px;
+}
+
+.card-container__card--display--768 {
+    display:none;
+}
+
+.additional-card-container {
+    display:none;
+    grid-template-columns: 224px 224px 224px;
+    justify-content: space-between;
+    row-gap:20px;
+    padding:0 20px;
+    margin-top:20px;
+}
+
+.swiper {
+    display:none;
+}
+}
+
+
+@media (min-width: 1366px) {
+
+.card-container {
+    display:grid;
+    grid-template-columns: 240px 240px 240px 240px;
+    justify-content: space-between;
+    row-gap:20px;
+    padding:0 20px;
+}
+
+.header-brands {
+    width:auto;
+    height:56px;
+}
+
+.additional-card-container {
+    display:none;
+    grid-template-columns: 240px 240px 240px 240px;
+    justify-content: space-between;
+    row-gap:20px;
+    padding:0 20px;
+    margin-top:20px;
+}
+
+.swiper {
+    display:none;
+}
+}

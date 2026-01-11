@@ -1,0 +1,138 @@
+:root {
+--link-color: #1b1c21;
+--title-font-color: #7E7E82;
+--white-color: #FFFFFF;
+--background-color: #F8F8F8;
+--border-title-color: #D9FFF5;
+--border-color: #EAEAEA;
+}
+
+.technics-cards-list {
+  display:none;
+      @media (min-width: 1366px) {
+      display:grid;
+      grid-template-columns: 240px 240px 240px 240px;
+      grid-template-rows: 160px;
+      grid-auto-rows: 0px;
+      }  
+  
+      @media (min-width: 768px) and (max-width: 1365px) {
+      display:grid;
+      grid-template-columns: 224px 224px 224px;
+      grid-template-rows: 160px;
+      grid-auto-rows: 0px;
+      }
+  padding-top:20px;
+  overflow: hidden;
+  padding:0 20px;
+  justify-content: space-between;
+  margin-top:20px;
+}
+
+.technics-cards-list__item {
+  @media (min-width: 768px) and (max-width: 1365px) {
+  width:224px;
+  background-position: 165px 105px;}
+  @media (min-width: 1366px) {
+  width:240px;
+  background-position: 185px 105px;}
+  @media (min-width: 320px) and (max-width:767px) {
+  width:240px;
+  background-position: 185px 105px;
+  display:inline-block;
+}
+
+  height:160px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  overflow: hidden;
+  background-image:url("C:/Users/evgen/Desktop/block7/src/img/go.svg");
+  background-repeat:no-repeat;
+  background-color: white;
+}
+
+.technics-cards-swiper {
+    width:100%;
+    height: auto;
+    margin-top:20px;
+        @media (min-width: 768px) {
+        display:none;
+        }
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.technics-cards-swiper-wrapper {
+    padding-left:20px;
+    height:170px;
+    margin-bottom: 20px;
+    width:320px;
+}
+
+.technics-cards-swiper-slide {
+    width:240px;
+    padding:0;
+    margin:0;
+}
+
+.technics-cards-swiper-pagination {
+  display: flex;
+  justify-content: center; /* Центрирует буллеты горизонтально */
+  align-items: center;
+  width: 100%;
+  margin-bottom: 25px;
+}
+  @media (min-width:320px) and (max-width:767px) {
+.technics-container::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 166px;
+  left: 0;
+  top:73px;
+  pointer-events: none;
+  background: linear-gradient(to right, rgba(248, 248, 248, 1), rgba(248, 248, 248, 0));
+  z-index: 2;
+}
+
+.technics-container::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 166px;
+  right: 0;
+  top:73px;
+  pointer-events: none;
+  background: linear-gradient(to left, rgba(248, 248, 248, 1), rgba(248, 248, 248, 0));
+  z-index: 2;
+}
+
+.technics-container {
+  position: relative;
+}
+}
+
+.technics-container__title {
+  margin-top:15px;
+}
+
+.technics-container__read-more-button {
+  display: flex; 
+	justify-content: center;
+	align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top:20px;
+  margin-left:15px;
+    @media (min-width:320px) and (max-width:767px) {
+      display:none;
+    }
+}
+
+.technics-cards-list__item--text-design {
+  display:inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color:var(--link-color);
+  padding: 8px;
+}

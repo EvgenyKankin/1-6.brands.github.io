@@ -1,0 +1,60 @@
+@import url('./reset.css');
+@import url('./fonts.css');
+@import url('./services-container.css');
+@import url('./brands-container.css');
+@import url('./technics-container.css');
+@import url('./price-container.css');
+@import url('./footer-container.css');
+@import url('./modal-windows.css');
+@import url('./aside.css');
+
+
+:root {
+--link-color: #1b1c21;
+--title-font-color: #7E7E82;
+--white-color: #FFFFFF;
+--background-color: #F8F8F8;
+--border-title-color: #D9FFF5;
+--border-color: #EAEAEA;
+}
+
+
+@media (min-width: 1366px) {
+.wrapper {
+  display:grid;
+  grid-template-columns: 320px 1fr;
+  overflow: hidden;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: TTLakes;
+  background-color: var(--background-color);
+  font-weight:300;
+  font-size: 14px;
+  width:100%;
+  
+}
+
+.main-container__title--gradient {
+    display:flex;
+    border-top: 1px solid var(--border-title-color);
+    background-image: linear-gradient(to right, var(--background-color), var(--white-color));
+    width:auto;
+    height:56px;
+}
+
+.main-container__title--text-design {
+  text-transform: uppercase;
+    font-weight: 400;
+    font-size:16px;
+    color: var(--title-font-color);
+    margin-left:20px;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+a {
+  cursor: pointer;
+}

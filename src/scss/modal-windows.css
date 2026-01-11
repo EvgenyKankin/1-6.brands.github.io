@@ -1,0 +1,239 @@
+:root {
+--font-color: #1b1c21;
+--white-color: #FFFFFF;
+--border-color: #EAEAEA;
+--title-font-color: #7E7E82;
+--link-pink-color: #FF3E79;
+}
+
+
+
+
+/*Modal call window*/
+
+.modal-call-container {
+  width:440px;
+    @media (min-width:320px) and (max-width:767px) {
+      width:100vw;
+      }
+  height:100vh;
+  display:none;
+  flex-direction: column;
+  background-color: var(--white-color);
+  position:fixed;
+  top:0;
+  right:0;
+}
+
+.modal-call-container__window--active {
+  display:flex;
+}
+
+
+.modal-call-container__close-button {
+  width:40px;
+  height:40px;
+  background-image: url('C:/Users/evgen/Desktop/block7/src/img/close.svg');
+  position:fixed;
+  top:20px;
+  right:460px;
+    @media (min-width:320px) and (max-width:767px) {
+      position:static;
+      margin-left:5%;
+      margin-top:5%;
+      }
+}
+
+.modal-call-container__submit {
+  width:136px;
+  height:32px;
+  background-image: url('C:/Users/evgen/Desktop/block7/src/img/send.svg');
+  margin-top:20px;
+  margin-right: 34px;
+  align-self: flex-end;
+    @media (min-width:320px) and (max-width:767px) {
+      margin-right:5%;
+    }
+}
+
+.modal-call-container__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  color:var(--font-color);
+  display: flex;
+  align-items: center;
+  gap:30px;
+  margin-top:20px;
+    @media (min-width:320px) and (max-width:767px) {
+      gap:5%;
+    }
+}
+
+.modal-call-container__title--highlight {
+  background-image: url('C:/Users/evgen/Desktop/block7/src/img/highlight.svg');
+  width:4px;
+  height:40px;
+}
+
+.modal-call-container__form {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-call-container__input {
+    width:288px;
+    height:48px;
+    @media (min-width:768px) {
+    width:376px;
+    height:48px;
+    }
+  border:1px solid var(--border-color);
+  border-radius: 8px;
+  font-family: TTLakes;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  padding-left: 10px;
+  align-self: center;
+  margin-top:20px;
+}
+
+.modal-call-container__disclaimer {
+  width:376px;
+  height:48px;  
+  margin-top:20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0px;
+  color:var(--title-font-color);
+    @media (min-width:320px) and (max-width:767px) {
+      /*margin-left:5%;*/
+      width:288px;
+      height:64px;
+    }
+}
+
+.modal-call-container__disclaimer--link-decoration {
+  color:var(--link-pink-color);
+}
+
+
+/*Modal feedback */
+
+.modal-feedback-container {
+  width:440px;
+    @media (min-width:320px) and (max-width:767px) {
+      width:100vw;
+      }
+  height:100vh;
+  display:none;
+  flex-direction: column;
+  background-color: var(--white-color);
+  position:fixed;
+  top:0;
+  right:0;
+}
+
+.modal-feedback-container__window--active {
+  display:flex;
+}
+
+
+.modal-feedback-container__close-button {
+  width:40px;
+  height:40px;
+  background-image: url('C:/Users/evgen/Desktop/block7/src/img/close.svg');
+  position:fixed;
+  top:20px;
+  right:460px;
+    @media (min-width:320px) and (max-width:767px) {
+      position:static;
+      margin-left:5%;
+      margin-top:5%;
+      }
+}
+
+.modal-feedback-container__submit {
+  width:136px;
+  height:32px;
+  background-image: url('C:/Users/evgen/Desktop/block7/src/img/send.svg');
+  margin-top:20px;
+  margin-right: 34px;
+  align-self: flex-end;
+    @media (min-width:320px) and (max-width:767px) {
+      margin-right:5%;
+    }
+}
+
+.modal-feedback-container__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  color: var(--font-color);
+  display: flex;
+  align-items: center;
+  gap:30px;
+  margin-top:20px;
+    @media (min-width:320px) and (max-width:767px) {
+      gap:5%;
+    }
+}
+
+.modal-feedback-container__title--highlight {
+  background-image: url('C:/Users/evgen/Desktop/block7/src/img/highlight.svg');
+  width:4px;
+  height:40px;
+}
+
+.modal-feedback-container__form {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-feedback-container__input {
+  width:288px;
+  height:48px;
+    @media (min-width:768px) {
+    width:376px;
+    height:48px;
+    }
+  border:1px solid var(--border-color);
+  border-radius: 8px;
+  font-family: TTLakes;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  padding-left: 10px;
+  align-self: center;
+  margin-top:20px;
+}
+
+.modal-feedback-container__input--textarea-height {
+  min-height:118px;
+}
+
+.modal-feedback-container__input--textarea-height::placeholder {
+  position: relative;
+  top:-35px;
+}
+
+.wrapper__area--blured {
+  @media (min-width:768px) and (max-width:1365px) {
+  position:fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 2;
+  }
+  display:none;
+}

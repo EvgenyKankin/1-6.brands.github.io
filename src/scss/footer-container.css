@@ -1,0 +1,48 @@
+:root {
+--title-color: #7E7E82;
+--border-title-color: #D9FFF5;
+}
+
+.footer-container {
+display:flex;
+height:65px;
+margin-top:40px;
+border-top: 1px solid var(--border-title-color);
+justify-content: space-between;
+padding: 20px;
+color:var(--title-color);
+margin-bottom: 20px;
+  @media (min-width:320px) and (max-width:767px) {
+      flex-direction: column;
+      row-gap:20px;
+      justify-content: center;
+      align-items: center;
+      height:129px;
+    }
+}
+
+.footer-container__offerts {
+  width:330px;
+  height:32px;
+  text-align: right;
+      @media (min-width:768px) and (max-width:1365px) {
+      width:213px;
+      }
+      @media (min-width:320px) and (max-width:767px) {
+      text-align: center;
+      width:312px;
+    }
+}
+
+.footer-container__politics {
+  width:214px;
+  height:16px;
+}
+
+.footer-container__year {
+  width:218px;
+  height:32px;
+    @media (min-width:320px) and (max-width:767px) {
+      text-align: center;
+    }
+}
